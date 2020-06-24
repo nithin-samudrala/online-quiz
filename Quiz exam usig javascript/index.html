@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Python quiz</h1>
+        </header>
+        <questions>
+            <div id="score"></div>
+            <form id="quiz" onsubmit="return answersubited()">
+                <h3 id="q1">1. What will be the output of the following code :<br> <div id="code"> type(type(int))</div> </h3>
+                <div>
+                    <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">A.type 'int'</label><br>
+                    <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">B.type 'type'</label><br>
+                    <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">C.Error</label><br>
+                    <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">D.0</label>
+                </div>
+                <h3 id="q2">2.What is the output of the following code :<div id="code"> L = ['a','b','c','d']<br>print "".join(L)</div> </h3>
+                <div>
+                    <input type="radio" name="q2" value="a" id="q2a"><label for="q2a">A. Error</label><br>
+                    <input type="radio" name="q2" value="b" id="q2b"><label for="q2b">B. None</label><br>
+                    <input type="radio" name="q2" value="c" id="q2c"><label for="q2c">C. abcd</label><br>
+                    <input type="radio" name="q2" value="d" id="q2d"><label for="q2d">D. [‘a’,’b’,’c’,’d’]</label>
+                </div>
+                <h3 id="q3">3.What is the output of the following segment : <div id="code"> chr(ord('A')) </div></h3>
+                <div>
+                    <input type="radio" name="q3" value="a" id="q3a"><label for="q3a">A. A</label><br>
+                    <input type="radio" name="q3" value="b" id="q3b"><label for="q3b">B. None</label><br>
+                    <input type="radio" name="q3" value="c" id="q3c"><label for="q3c">C. a</label><br>
+                    <input type="radio" name="q3" value="d" id="q3d"><label for="q3d">D. Error</label>
+                </div>
+                <h3 id="q4">4. What is the output of the following program :<div id="code">y = 8<br>z = lambda x : x * y<br>print z(6)</div></h3>
+                <div>
+                    <input type="radio" name="q4" value="a" id="q4a"><label for="q4a">A. 48</label><br>
+                    <input type="radio" name="q4" value="b" id="q4b"><label for="q4b">B. 14</label><br>
+                    <input type="radio" name="q4" value="c" id="q4c"><label for="q4c">C. 64</label><br>
+                    <input type="radio" name="q4" value="d" id="q4d"><label for="q4d">D. None of the above</label>
+                </div>
+                <h3 id="q5">5.What is called when a function is defined inside a class?</h3>
+                <div>
+                    <input type="radio" name="q5" value="a" id="q5a"><label for="q5a">A. Modue</label><br>
+                    <input type="radio" name="q5" value="b" id="q5b"><label for="q5b">B. Class</label><br>
+                    <input type="radio" name="q5" value="c" id="q5c"><label for="q5c">C. Another Function</label><br>
+                    <input type="radio" name="q5" value="d" id="q5d"><label for="q5d">D. Method</label>
+                </div>
+                <input type="submit" value="Submit" id='button'>
+                
+            </form>
+            
+        </questions>
+    </div>
+    <script src="jsfile.js"></script>
+</body>
+</html>
